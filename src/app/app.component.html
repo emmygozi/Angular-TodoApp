@@ -1,5 +1,10 @@
-
 <div>
+  <app-header></app-header>
   <h1>Hello {{ angularApp | uppercase }}</h1>
-  <h3>I'd love to make some thousands of dollars <br/><br/> {{ 10000 + 20000 | currency:'USD' }}</h3>
+  <h3>
+    I'd love to make some thousands of dollars <br /><br />
+    {{ 10000 + 20000 | currency: "USD" }}
+  </h3>
+  <br />
+  <router-outlet></router-outlet>
 </div>
